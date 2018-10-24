@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <!--import class BindingUtils-->
+        <!--<import type="info.androidhive.databinding.utils.BindingUtils" />-->
+
+        <!--<import type="android.view.View"/>-->
+
+        <!--<variable-->
+        <!--name="viewModel"-->
+        <!--type="com.alpine.my19app.app.MainViewModel" />-->
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/content"
+            layout="@layout/common_list_item" />
+    </LinearLayout>
+</layout>

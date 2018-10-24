@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <!--import class BindingUtils-->
+        <!--<import type="info.androidhive.databinding.utils.BindingUtils" />-->
+
+        <!--<import type="android.view.View"/>-->
+
+        <!--<variable-->
+        <!--name="viewModel"-->
+        <!--type="com.alpine.my19app.app.MainViewModel" />-->
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/ivTaobao"
+            style="@style/iv_common"
+            android:src="@drawable/ic_taobao" />
+
+        <ImageView
+            android:id="@+id/ivTmall"
+            android:background="?android:attr/selectableItemBackground"
+            style="@style/iv_common"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_tmall" />
+
+        <ImageView
+            android:id="@+id/iv1688"
+            style="@style/iv_common"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_1688" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "275880255399",
+    "firebase_url": "https://vominhthien-3e553.firebaseio.com",
+    "project_id": "vominhthien-3e553",
+    "storage_bucket": "vominhthien-3e553.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275880255399:android:a5e3298b247f3732",
+        "android_client_info": {
+          "package_name": "com.monamedia.vmt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275880255399-lfga6f0602hsh7n6vjeqch8p3n15p660.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.monamedia.vmt",
+            "certificate_hash": "5e789dc1cb180f63aea7487e910efb26b74a3aea"
+          }
+        },
+        {
+          "client_id": "275880255399-jtucca71rdq8ji4qdk2kd3ajvv6jqh18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALoxVgN1THyweGszEtvTxvprkBSLRJ4gM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275880255399-jtucca71rdq8ji4qdk2kd3ajvv6jqh18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

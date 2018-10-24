@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <!--import class BindingUtils-->
+        <!--<import type="info.androidhive.databinding.utils.BindingUtils" />-->
+
+        <!--<import type="android.view.View"/>-->
+
+        <!--<variable-->
+        <!--name="viewModel"-->
+        <!--type="com.alpine.my19app.app.MainViewModel" />-->
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/btnHeart"
+                    style="@style/menu_layout_item">
+
+                    <ImageView
+                        style="@style/iv_common"
+                        android:layout_width="25dp"
+                        android:src="@drawable/ic_heart" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/btnCart"
+                    style="@style/menu_layout_item">
+
+                    <ImageView
+                        style="@style/iv_common"
+                        android:layout_width="25dp"
+                        android:src="@drawable/ic_cart_order" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/btnHome"
+                    style="@style/menu_layout_item">
+
+                    <ImageView
+                        style="@style/iv_common"
+                        android:layout_width="25dp"
+                        android:src="@drawable/ic_home_order" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#d7d7d7"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/btnBack"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="Trở lại giỏ hàng"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorOrder"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorCategory"
+                    android:text="@string/select_category"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/btnNotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorNotes"
+                    android:text="@string/notes"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/btnOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorOrder"
+                    android:text="@string/order"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

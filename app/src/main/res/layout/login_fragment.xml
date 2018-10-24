@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <!--import class BindingUtils-->
+        <!--<import type="info.androidhive.databinding.utils.BindingUtils" />-->
+
+        <!--<import type="android.view.View"/>-->
+
+        <!--<variable-->
+        <!--name="viewModel"-->
+        <!--type="com.alpine.my19app.app.MainViewModel" />-->
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_background">
+
+        <ImageView
+            style="@style/iv_common"
+            android:scaleType="fitStart"
+            android:src="@drawable/login_background" />
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/iv_common"
+                    android:layout_height="90dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/login_logo" />
+
+            </FrameLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <EditText
+                                android:id="@+id/edUsername"
+                                style="@style/ed_common"
+                                android:hint="@string/username" />
+
+                            <EditText
+                                android:id="@+id/edPassword"
+                                style="@style/ed_common"
+                                android:layout_marginTop="5dp"
+                                android:hint="@string/password" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/cbRemember"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:text="@string/remember_account" />
+
+                                <TextView
+                                    android:id="@+id/btnForgot"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="?android:attr/selectableItemBackground"
+                                    android:gravity="center"
+                                    android:text="@string/forgot_pass"
+                                    android:textColor="@color/colorRed" />
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <Button
+                                    android:id="@+id/btnLogin"
+                                    style="@style/menu_button"
+                                    android:text="@string/login" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:elevation="2dp" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/btnRegister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="@dimen/common_padding_view"
+                        android:text="@string/register_account"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frLoading"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/colorWhite" />
+        </FrameLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <!--import class BindingUtils-->
+        <!--<import type="info.androidhive.databinding.utils.BindingUtils" />-->
+
+        <!--<import type="android.view.View"/>-->
+
+        <!--<variable-->
+        <!--name="viewModel"-->
+        <!--type="com.alpine.my19app.app.MainViewModel" />-->
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="@dimen/edittext_height"
+        android:paddingLeft="5dp"
+        android:background="@drawable/border_view_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:textAllCaps="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ZZZ" />
+
+        <EditText
+            android:id="@+id/ed"
+            style="@style/ed_common"
+            android:layout_weight="1"
+            android:background="@null" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+        <!--import class BindingUtils-->
+        <!--<import type="info.androidhive.databinding.utils.BindingUtils" />-->
+
+        <!--<import type="android.view.View"/>-->
+
+        <!--<variable-->
+        <!--name="viewModel"-->
+        <!--type="com.alpine.my19app.app.MainViewModel" />-->
+    </data>
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <android.support.v4.view.ViewPager
+               android:id="@+id/viewPager"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1" />
+
+           <include layout="@layout/line_layout" />
+
+           <android.support.design.widget.TabLayout
+               android:id="@+id/tabs"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/tabLayoutBg"
+               app:tabGravity="fill"
+               app:tabIndicatorGravity="top"
+               app:tabMaxWidth="0dp"
+               app:tabMode="fixed" />
+       </LinearLayout>
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <include
+               android:id="@+id/content"
+               layout="@layout/common_list_item" />
+       </FrameLayout>
+   </FrameLayout>
+</layout>

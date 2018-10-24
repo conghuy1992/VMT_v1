@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/Select_a_photo"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnTake"
+        style="@style/menu_buttom"
+        android:text="@string/Take_photo" />
+
+    <Button
+        android:id="@+id/btnChoose"
+        style="@style/menu_buttom"
+        android:text="@string/Choose_from_library" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/menu_cancel_buttom"
+        android:text="@string/cancel" />
+</LinearLayout>
